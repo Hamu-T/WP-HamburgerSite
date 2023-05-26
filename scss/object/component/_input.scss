@@ -1,0 +1,27 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m; 
+
+/*  input ボタン */
+
+.c-input {
+    width: 396px;
+    height: 46px;
+    background-color: v.$c-white;
+    border: 1px solid v.$c-text;
+    border-radius: 10px;
+    &--header {
+        position: relative;
+        padding-left: 50px;
+        width: 21vw;
+        @include m.mq(md) {
+            width: 45vw;
+            height: 5vw;
+        }
+        @include m.mq(sp) {
+            width: 53vw;
+            height: 10vw;
+            font-size: 2.3vw;
+            padding-left: 10vw;
+        }
+    }
+}

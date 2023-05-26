@@ -1,0 +1,68 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+@use 'sass:math';
+
+/* ボタン */
+
+.c-button {
+    width: 136px;
+    height: 46px;
+    background: linear-gradient(v.$c-gradation-1,v.$c-gradation-2);
+    border: 1px solid v.$c-text;
+    border-radius: 10px;
+    &--header {
+        font-weight: bold;
+        margin: 0 1.5vw 0 0.8vw;
+        color: v.$c-text;
+        @include m.mq(md) {
+            height: 5vw;
+        }
+        @include m.mq(sp) {
+            width: 18vw;
+            height: 10vw;
+            font-size: 2.5vw;
+            margin-left: 3vw;
+        }
+    }
+    &--card {
+        width: 20vw;
+        height: 5vw;
+        margin-top: 4vw;
+        border-radius: 60px;
+        background-color: v.$c-white;
+        font-family: 'M PLUS 1', sans-serif;
+        font-weight: bold;
+        font-size: 1vw;
+        color: v.$c-text;
+        @include m.mq(md) {
+            font-size: 1.8vw;
+            margin: 5vw 0 1vw 0;
+        }
+        @include m.mq(sp) {
+            font-size: 4vw;
+            width: 44vw;
+            height: 12vw;
+            margin: 10vw 0 12vw 0;
+        }
+    }
+    &--single {
+        font-family: 'M PLUS 1', sans-serif;
+        font-weight: bold;
+        width: 25vw;
+        height: 6vw;
+        font-size: 0.8vw; 
+        border-radius: 24px;
+        @include m.mq(md) {
+            width: 51vw;
+            height: 13vw;
+            font-size: 1.8vw;
+            margin: 1vw 0;
+        }
+        @include m.mq(sp) {
+            width: 88vw;
+            height: 18vw;
+            font-size: 3.8vw;
+            margin-top: 6vw;
+        }
+    }
+}

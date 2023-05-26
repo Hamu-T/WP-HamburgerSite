@@ -1,0 +1,19 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+/* 虫眼鏡 */
+
+.c-grass {
+    background-image: url(../../../images/search01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px;
+    height: 24px;
+    left: 10px;
+    @include m.mq(sp) {
+        width: 40px;
+        height: 40px;
+        background-size: 4.8vw;
+        left: 2.5vw;
+    }
+}

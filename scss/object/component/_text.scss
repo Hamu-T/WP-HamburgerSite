@@ -1,0 +1,129 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+/* text */
+
+.c-text {
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: bold;
+    color: v.$c-darkGoldenBrown;
+    &--outin {
+        &_content {
+            font-weight: 400;
+            font-size: 1.2vw;
+            line-height: 2vw;
+            @include m.mq(md) {
+                font-size: 1.6vw;
+                line-height: 2.5vw;
+            }
+            @include m.mq(sp) {
+                font-size: 4vw;
+                line-height: 7vw;
+            }
+        }
+    }
+    &--map {
+        position: relative;
+        font-size: 0.9vw;
+        line-height: 2vw;
+        color: v.$c-white;
+        @include m.mq(md) {
+            font-size: 1.5vw;
+            line-height: 3.5vw;
+        }
+        @include m.mq(sp) {
+            font-size: 3vw;
+            line-height: 8vw;
+        }
+    }
+    &--footer {
+        font-weight:lighter;
+        font-size: 1.1vw;
+        color: v.$c-white;
+        @include m.mq(md) {
+            font-size: 1.8vw;
+        }
+        @include m.mq(sp) {
+            font-size: 3vw;
+        }
+    }
+    &--copyright {
+        font-weight:lighter;
+        font-size: 0.7vw;
+        color: v.$c-white;
+        @include m.mq(md) {
+            font-size: 1vw;
+        }
+        @include m.mq(sp) {
+            font-size: 2vw;
+        }
+    }
+    &--menu-item {
+        color: v.$c-text;
+        font-weight: 400;
+        font-size: 1vw;
+        line-height: 1.6vw;
+        margin-top: 1.7vw;
+        margin-left: 1.1vw;
+        @include m.mq(md) {
+            font-size: 2.5vw;
+            line-height: 5vw;
+            margin-left: 4vw;
+        }
+        @include m.mq(sp) {
+            font-size: 3.5vw;
+            line-height: 8vw;
+            margin-left: 5vw;
+        }
+    }
+    &--archive {
+        font-size: 24px;
+        margin-left: 32px;
+        color: v.$c-white;
+        @include m.mq(sp) {
+            margin: 20px 0 0 0;
+        }
+    }
+    &--info {
+        font-weight: 400;
+        font-size: 0.8vw;
+        line-height: 1.3vw;
+        color: v.$c-darkGoldenBrown;
+        margin: 1.8vw 0 2vw 0;
+        @include m.mq(md) {
+            font-size: 2vw;
+            line-height: 3.5vw;
+            margin: 4vw 0 0 0;
+        }
+        @include m.mq(sp) {
+            font-size: 3.5vw;
+            margin-top: 4vw;
+            line-height: 6vw;
+        }
+    }
+    &--card {
+        font-weight: 400;
+        font-size: 0.8vw;
+        line-height: 1.6vw;
+        color: v.$c-white;
+        @include m.mq(md) {
+            font-size: 1.8vw;
+            line-height: 2.8vw;
+        }
+        @include m.mq(sp) {
+            font-size: 3.5vw;
+            line-height: 6vw
+        }
+    }
+    &--single {
+        font-size: 0.8vw;
+        padding-bottom: 6vw;
+        @include m.mq(md) {
+            font-size: 1.7vw;
+            padding-bottom: 7vw;
+        }
+        @include m.mq(sp) {
+            font-size: 3.7vw;
+        }
+    }
+}

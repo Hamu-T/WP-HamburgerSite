@@ -1,0 +1,40 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+/* outin-Box 外枠 */
+
+.p-outin {
+    display: flex;
+    justify-content: center;
+    padding: 5vw 5vw;
+    @include m.mq(md) {
+        padding: 3.5vw 3.5vw;
+    }
+    @include m.mq(sp) {
+        display:grid;
+        gap: 3vw;
+        flex-direction: column;
+        padding-bottom: 10vw;
+    }
+    &__box {
+        display: flex;
+        width: 100%;
+        min-height: 63vw;// 高さを幅の伸縮に合わせる為「vw」を使った
+        @include m.mq(md) {
+            min-height: 83vw;
+        }
+        @include m.mq(sp) {
+            min-height: 143vw;
+        }
+    }
+    &__inner {
+        display: grid;
+        grid-template-rows: 300px 1fr;
+    }
+    &__title {
+        grid-row: 1/2;
+    }
+    &__content {
+        grid-row: 3/4;
+    }
+}

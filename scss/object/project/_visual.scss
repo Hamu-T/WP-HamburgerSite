@@ -1,0 +1,56 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+/* header下のvisual
+------------------ */
+
+/* front-page */
+.p-visual {
+    display: flex;
+    align-items: center;
+    height: 23vw;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &--front {
+        background-image: url(../../../images/mainvisual-sp.jpg);
+        @include m.mq(md) {
+            height: 40vw;
+        }
+        @include m.mq(sp) {
+            height: 80vw;
+        }   
+    }
+    /* archive-page */
+    &--archive {
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../../images/page-title_arcive@2x.jpg);
+        height: 12vw;
+        padding-left: 88px;
+        @include m.mq(md) {
+            height: 40vw;
+        }
+        @include m.mq(sp) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 80vw;
+            width: 100%;
+            padding-left: 50px;
+            background-position: unset;
+        }
+    }
+    &--single {
+        background-image: url(../../../images/single-visual.png);
+        @include m.mq(md) {
+            height: 64vw;
+        }
+    }
+    &--shop {
+        background-image: url(../../../images/shop.png);
+        @include m.mq(md) {
+            height: 64vw;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin'as m;
+
+/* JS class sidebar以外scrollさせない */
+
+.c-no_scroll {
+    position:sticky;
+    &.active {
+        position: fixed;
+        overflow: scroll;
+        top: 0;
+        left: 0;
+    }
+}
