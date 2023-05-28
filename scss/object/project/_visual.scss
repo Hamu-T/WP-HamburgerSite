@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     &--front {
-        background-image: url(../../../images/mainvisual-sp.jpg);
+        background-image: url(../images/mainvisual-sp.jpg);
         @include m.mq(md) {
             height: 40vw;
         }
