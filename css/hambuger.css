@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 .c-outin--takeout {
   margin-right: 3vw;
-  background-image: url(../../../images/home_take-out_.jpg);
+  background-image: url(../images/home_take-out_.jpg);
 }
 @media screen and (max-width: 1200px) {
   .c-outin--takeout {
@@ -393,7 +393,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 }
 .c-outin--eatin {
   margin-left: 3vw;
-  background-image: url(../../../images/home-eat_in.jpg);
+  background-image: url(../images/home-eat_in.jpg);
 }
 @media screen and (max-width: 1200px) {
   .c-outin--eatin {
@@ -1447,7 +1447,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   /* archive-page */
 }
 .p-visual--front {
-  background-image: url(../../../images/mainvisual-sp.jpg);
+  background-image: url(../images/mainvisual-sp.jpg);
 }
 @media screen and (max-width: 1200px) {
   .p-visual--front {

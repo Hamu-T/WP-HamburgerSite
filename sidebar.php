@@ -1,3 +1,4 @@
+<article class="c-shadow"></article>
 <aside class="l-sidebar">
         <div class="l-sidebar__inner">
             <section class="p-menu">
