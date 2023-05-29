@@ -21,5 +21,6 @@ function hamburger_script() {
     wp_enqueue_style( 'hambuger', get_template_directory_uri() . '/css/hambuger.css' );
     wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/JS/style.js', array(), '1.0', true );
+    wp_enqueue_script( 'search-script', get_template_directory_uri() . '/JS/search.js', array(), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'hamburger_script' );
