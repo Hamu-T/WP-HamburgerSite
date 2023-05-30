@@ -42,13 +42,13 @@
         }
     }
     &--single {
-        background-image: url(../../../images/single-visual.png);
+        background-image: url(../images/single-visual.png);
         @include m.mq(md) {
             height: 64vw;
         }
     }
     &--shop {
-        background-image: url(../../../images/shop.png);
+        background-image: url(../images/shop.png);
         @include m.mq(md) {
             height: 64vw;
         }

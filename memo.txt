@@ -1,4 +1,9 @@
 やる事
 
+共通
 - html -> php
 - header,sidebar,footerを別ファイルに移動
+
+index.php
+- Takeout, Eatinのボックスはカテゴリーになり、
+    それぞれのボックスにカテゴリーページへのリンクだけ設定
