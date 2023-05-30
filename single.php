@@ -1,10 +1,20 @@
 <?php get_header(); ?>
     <main class="l-main">
-        <div class="l-main__inner">
+    <!-- ループの開始 -->
+    <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
             <article class="p-visual p-visual--single">
-                <h2 class="c-title c-title--single">h1 チーズバーガー</h2>
+                <h2 class="c-title c-title--single">h1 シングルページ</h2>
             </article>
-        </div><!-- l-main__inner -->
+            <?php the_content(); ?>
+            <?php wp_link_pages(); ?>
+
+<!-- ループの終わり -->
+<?php endwhile;
+    else : ?>
+<p>表示する記事がありません</p>
+<?php endif; ?>
+
         <div class="p-singles">
             <div class="p-titles">
                 <h2 class="c-single-txt c-single-txt--h2">見出しh2</h2>
@@ -39,7 +49,7 @@
                 <article class="c-single__img--top"></article>
                 <div class="c-single--gap">
                     <article class="c-single__img--contents">
-                        <img class="c-single__img--foods" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
+                        <img class="c-single__img--foods" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
                         <p class="c-single--content">
                             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
@@ -47,7 +57,7 @@
                         </p>
                     </article>
                     <article class="c-single__img--contents">
-                        <img class="c-single__img--foods" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
+                        <img class="c-single__img--foods" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
                         <p class="c-single--content">
                             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
@@ -76,19 +86,19 @@
                     </p>
                 </article> -->
                 <article class="c-single__img--bottom">
-                    <img class="c-single__img--pin" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
+                    <img class="c-single__img--pin" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
                 </article>
             </section><!-- p-single__container -->
             <div class="p-galleries">
-                <img class="c-gallery--item" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
-                <img class="c-gallery--item" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
-                <img class="c-gallery--item" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
-                <img class="c-gallery--item" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
-                <img class="c-gallery--item" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
-                <img class="c-gallery--item" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
-                <img class="c-gallery--item" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
-                <img class="c-gallery--item" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
-                <img class="c-gallery--item" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
+                <img class="c-gallery--item" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
+                <img class="c-gallery--item" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
+                <img class="c-gallery--item" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
+                <img class="c-gallery--item" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
+                <img class="c-gallery--item" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
+                <img class="c-gallery--item" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
+                <img class="c-gallery--item" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
+                <img class="c-gallery--item" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
+                <img class="c-gallery--item" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cooked-foods-750073-2.png" alt="メニューの写真">
             </div>
             <ol class="p-list-box u-revert">
                 <ol class="c-list--item u-gap">
@@ -162,5 +172,5 @@
             <p class="c-text c-text--single">boldboldboldboldboldboldbold</p>
         </div><!-- p-singles -->
     </main>
-    <?php get_footer(); ?>
+    <?php get_sidebar(); ?>
 <?php get_footer(); ?>

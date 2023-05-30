@@ -6,24 +6,24 @@
             </article>
         </div><!-- l-main__inner -->
         <article class="p-outin">
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <section class="p-outin__box c-outin c-outin--takeout">
                 <ul class="p-outin__inner c-outin__container">
                     <li class="p-outin__title c-outin__title">
-                        <h2 class="c-title c-title--outin_title">Take Out</h2>
+                        <a  class="c-title c-title--outin_title" href="http://humburgersite.local/take-out/">Take Out</a>
                         <div class="c-border c-border--outin"></div>
                     </li>
                     <div class="p-outin__content c-outin__block">
                         <ul class="c-outin__inner">
                             <li class="c-title c-title--outin_subtitle">Take Out</li>
                             <li class="c-text c-text--outin_content">
-                                <?php the_content(); ?>
+                            当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。
                             </li>
                         </ul>
                         <ul class="c-outin__inner">
                             <li class="c-title c-title--outin_subtitle">Take Out</li>
                             <li class="c-text c-text--outin_content">
-                                <?php the_content(); ?>
+                            当店のテイクアウトで利用できる商品を掲載しています。当店のテイクアウトで利用できる商品を掲載しています。
+
                             </li>
                         </ul><!-- c-outin__inner -->
                     </div><!-- c-outin__block -->
@@ -32,26 +32,25 @@
             <section class="p-outin__box c-outin c-outin--eatin">
                 <ul class="p-outin__inner c-outin__container">
                     <li class="p-outin__title c-outin__title">
-                        <h2 class="c-title c-title--outin_title">Eat In</h2>
+                        <a class="c-title c-title--outin_title" href="http://humburgersite.local/eat-in/">Eat In</a>
                         <div class="c-border c-border--outin"></div>
                     </li>
                     <div class="p-outin__content c-outin__block">
                         <ul class="c-outin__inner">
                             <li class="c-title c-title--outin_subtitle">Eat In</li>
                             <li class="c-text c-text--outin_content">
-                                <?php the_content(); ?>
+                                店内でお食事いただけるメニューです。店内でお食事いただけるメニューです。店内でお食事いただけるメニューです。
                             </li>
                         </ul>
                         <ul class="c-outin__inner">
                             <li class="c-title c-title--outin_subtitle">Eat In</li>
                             <li class="c-text c-text--outin_content">
-                                <?php the_content(); ?>
+                                店内でお食事いただけるメニューです。店内でお食事いただけるメニューです。店内でお食事いただけるメニューです。
                             </li>
                         </ul><!-- c-outin__inner -->
                     </div><!-- c-outin__block -->
                 </ul>
             </section><!-- p-outin__box -->
-            <?php endwhile; endif; ?>
         </article><!-- p-outin -->
         <article class="p-map">
             <div class="p-map__wrapper">

@@ -649,7 +649,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 .c-single__img--top {
   width: 100%;
   height: 26vw;
-  background-image: url(../../../images/cooked-foods-750073-2.png);
+  background-image: url(../images/cooked-foods-750073-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -1482,7 +1482,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   }
 }
 .p-visual--single {
-  background-image: url(../../../images/single-visual.png);
+  background-image: url(../images/single-visual.png);
 }
 @media screen and (max-width: 1200px) {
   .p-visual--single {
@@ -1490,7 +1490,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   }
 }
 .p-visual--shop {
-  background-image: url(../../../images/shop.png);
+  background-image: url(../images/shop.png);
 }
 @media screen and (max-width: 1200px) {
   .p-visual--shop {

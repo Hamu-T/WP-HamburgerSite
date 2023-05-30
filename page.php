@@ -7,7 +7,7 @@
         </div><!-- l-main__inner -->
         <div class="p-singles">
             <div class="p-titles">
-                <h2 class="c-single-txt c-single-txt--h2">見出しh2</h2>
+                <h2 class="c-single-txt c-single-txt--h2">見出しh2ページ</h2>
                 <p class="c-single-txt c-single-txt--text">
                     pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。
                     pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。
@@ -39,7 +39,7 @@
                 <article class="c-single__img--top"></article>
                 <div class="c-single--gap">
                     <article class="c-single__img--contents">
-                        <img class="c-single__img--foods" src="./images/cooked-foods-750073-2.png" alt="メニューの写真">
+                        <img class="c-single__img--foods" src="../images/cooked-foods-750073-2.png" alt="メニューの写真">
                         <p class="c-single--content">
                             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
