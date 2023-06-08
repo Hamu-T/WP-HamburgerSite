@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 
 /* 虫眼鏡 */
 .c-grass {
-  background-image: url(../../../images/search01.png);
+  background-image: url(../images/search01.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 24px;
@@ -1071,6 +1071,36 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   .c-title--single {
     font-size: 9vw;
     margin-left: 8vw;
+  }
+}
+
+h2.wp-block-heading {
+  font-family: "M PLUS 1", sans-serif;
+  font-weight: bold;
+  font-size: 3.5vw;
+  color: #3C2A10;
+  font-size: 2vw;
+}
+@media screen and (max-width: 1200px) {
+  h2.wp-block-heading {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2.wp-block-heading {
+    font-size: 6.5vw;
+  }
+}
+
+.wp-post-image {
+  min-width: 30vw;
+  max-height: 20vw;
+  border: 1px solid #000;
+}
+@media screen and (max-width: 1200px) {
+  .wp-post-image {
+    min-width: 38vw;
+    max-height: 25vw;
   }
 }
 

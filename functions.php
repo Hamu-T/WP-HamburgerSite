@@ -1,7 +1,10 @@
 <?php
 //テーマサポート
-add_theme_support( 'title-tag' );
-add_theme_support('post-thumbnails');
+function burger_theme_setup() {
+    add_theme_support( 'title-tag' );
+    add_theme_support('post-thumbnails');
+    add_image_size( 'page_eyecatch', 550, 305, true );
+}
 
 //タイトル出力
 function hamburger_title($title) {
@@ -14,7 +17,7 @@ function hamburger_title($title) {
 }
 add_filter( 'pre_get_document_title', 'hamburger_title' );
 
-function hamburger_script() {
+function hamburger_scripts() {
     wp_enqueue_style( 'noto-sans-jp', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap', array() );
     wp_enqueue_style( 'm-plus-1', 'https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;700&display=swap' );
     wp_enqueue_style( 'roboto', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap' );
@@ -24,4 +27,4 @@ function hamburger_script() {
     wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/JS/style.js', array(), '1.0', true );
     wp_enqueue_script( 'search-script', get_template_directory_uri() . '/JS/search.js', array(), '1.0', true );
 }
-add_action( 'wp_enqueue_scripts', 'hamburger_script' );
+add_action( 'wp_enqueue_scripts', 'hamburger_scripts' );
