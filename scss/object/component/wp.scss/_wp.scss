@@ -1,0 +1,30 @@
+@use '../../../foundation/variable' as v;
+@use '../../../foundation/mixin' as m;
+h2.wp-block-heading {
+    font-family: 'M PLUS 1', sans-serif;
+    font-weight: bold;
+    font-size: 3.5vw;
+    color: v.$c-darkGoldenBrown;
+        font-size: 2vw;
+        @include m.mq(md) {
+            font-size: 3.5vw;
+        }
+        @include m.mq(sp) {
+            font-size: 6.5vw;
+        }
+}
+.wp-post-image {
+    min-width: 30vw;
+    max-height: 20vw;
+    border: 1px solid #000;
+    @include m.mq(md) {
+        min-width: 38vw;
+        max-height: 25vw;
+    }
+
+}
+// .p-gallerise .wp-post-image {
+//     width: 100%;
+//     height: auto;
+
+// }

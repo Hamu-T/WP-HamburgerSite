@@ -7,8 +7,8 @@
                 <ul class="c-sidemenu">
                     <ul class="c-sidemenu__container">
                         <li class="c-title c-title--menu"><a href=""><h3>バーガー</h3></a></li>
-                        <li class="c-text--menu-item"><a href="">ハンバーガー</a></li>
-                        <li class="c-text--menu-item"><a href="">チーズバーガー</a></li>
+                        <li class="c-text--menu-item"><a href="http://humburgersite.local/hamburger/">ハンバーガー</a></li>
+                        <li class="c-text--menu-item"><a href="http://humburgersite.local/チーズバーガー">チーズバーガー</a></li>
                         <li class="c-text--menu-item"><a href="">テリヤキバーガー</a></li>
                         <li class="c-text--menu-item"><a href="">アボカドバーガー</a></li>
                         <li class="c-text--menu-item"><a href="">フィッシュバーガー</a></li>

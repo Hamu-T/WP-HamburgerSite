@@ -1,23 +1,13 @@
 <?php get_header(); ?>
     <main class="l-main">
-    <!-- ループの開始 -->
-    <?php if (have_posts()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
-            <article class="p-visual p-visual--single">
-                <h2 class="c-title c-title--single">h1 シングルページ</h2>
+            <article class="p-visual p-visual--single" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <h2 class="c-title c-title--single"><?php the_title(); ?></h2>
             </article>
-            <?php the_content(); ?>
-            <?php wp_link_pages(); ?>
-
-<!-- ループの終わり -->
-<?php endwhile;
-    else : ?>
-<p>表示する記事がありません</p>
-<?php endif; ?>
-
-        <div class="p-singles">
-            <div class="p-titles">
-                <h2 class="c-single-txt c-single-txt--h2">見出しh2</h2>
+            
+            <div class="p-singles">
+                <div class="p-titles">
+                
+                <h2 class="c-single-txt c-single-txt--h2"><?php the_content(); ?></h2>
                 <p class="c-single-txt c-single-txt--text">
                     pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。
                     pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。pタグテキスト。
