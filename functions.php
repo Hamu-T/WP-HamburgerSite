@@ -4,6 +4,7 @@ function burger_theme_setup() {
     add_theme_support( 'title-tag' );
     add_theme_support('post-thumbnails');
     add_image_size( 'page_eyecatch', 550, 305, true );
+    add_image_size( 'single_eyecatch', 1200, 900, true);
 }
 
 //タイトル出力
