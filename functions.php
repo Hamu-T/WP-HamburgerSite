@@ -1,12 +1,18 @@
 <?php
 //テーマサポート
-function burger_theme_setup() {
+function hamburger_theme_setup() {
+    add_theme_support( 'menus' );
     add_theme_support( 'title-tag' );
     add_theme_support('post-thumbnails');
     add_image_size( 'page_eyecatch', 550, 305, true );
     add_image_size( 'single_eyecatch', 1200, 900, true);
+    register_nav_menus( array(
+        'main-menu'     => 'メインメニュー',
+        'footer_menu'   => 'フッターメニュー',
+        'side_menu'     => 'サイドメニュー'
+    ) );
 }
-
+add_action( 'after_setup_theme', 'hamburger_theme_setup' );
 //タイトル出力
 function hamburger_title($title) {
     if( is_front_page() && is_home() ) {
@@ -29,3 +35,16 @@ function hamburger_scripts() {
     wp_enqueue_script( 'search-script', get_template_directory_uri() . '/JS/search.js', array(), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'hamburger_scripts' );
+
+function hamburger_widgets_init() {
+    register_sidebar ( array(
+        'name'          => 'カテゴリーウィジェット',
+        'id'            => 'category_widget',
+        'description'   => 'カテゴリー用ウィジェットです',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
+        'after_title'   =>"</h2>\n",
+    ));
+}
+add_action( 'widgets_init', 'hamburger_widgets_init');

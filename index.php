@@ -8,8 +8,8 @@
         <article class="p-outin">
             <section class="p-outin__box c-outin c-outin--takeout">
                 <ul class="p-outin__inner c-outin__container">
-                    <li class="p-outin__title c-outin__title">
-                        <a  class="c-title c-title--outin_title" href="http://humburgersite.local/take-out/">Take Out</a>
+                    <li class="p-outin__title c-outin__title" id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
+                        <a  class="c-title c-title--outin_title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         <div class="c-border c-border--outin"></div>
                     </li>
                     <div class="p-outin__content c-outin__block">
@@ -31,8 +31,8 @@
             </section><!-- p-outin__box -->
             <section class="p-outin__box c-outin c-outin--eatin">
                 <ul class="p-outin__inner c-outin__container">
-                    <li class="p-outin__title c-outin__title">
-                        <a class="c-title c-title--outin_title" href="http://humburgersite.local/eat-in/">Eat In</a>
+                    <li class="p-outin__title c-outin__title" id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
+                        <a class="c-title c-title--outin_title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         <div class="c-border c-border--outin"></div>
                     </li>
                     <div class="p-outin__content c-outin__block">
