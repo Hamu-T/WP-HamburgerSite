@@ -4,9 +4,13 @@
             <section class="p-menu">
                 <button class="l-sidebar__button c-hamburger c-hamburger--sidebar drawer-close"></button>
                 <h3 class="c-title c-title--sidebar-title">Menu</h3>
-                <ul class="c-sidemenu">
+                <?php wp_nav_menu(array(
+                    'menu' => 'hamburger',
+                ));
+                ?>
+                <!-- <ul class="c-sidemenu">
                     <ul class="c-sidemenu__container">
-                        <li class="c-title c-title--menu"><a href=""><h3>バーガー</h3></a></li>
+                        <li class="c-title c-title--menu"><a href="http://humburgersite.local/category/burger/"><h3>バーガー</h3></a></li>
                         <li class="c-text--menu-item"><a href="http://humburgersite.local/hamburger/">ハンバーガー</a></li>
                         <li class="c-text--menu-item"><a href="http://humburgersite.local/チーズバーガー">チーズバーガー</a></li>
                         <li class="c-text--menu-item"><a href="">テリヤキバーガー</a></li>
@@ -30,7 +34,7 @@
                         <li class="c-text--menu-item"><a href="">紅茶(Ice/Hot)</a></li>
                         <li class="c-text--menu-item"><a href="">コーヒー(Ice/Hot)</a></li>
                     </ul>
-                </ul>
+                </ul> -->
             </section>
         </div>
     </aside>
