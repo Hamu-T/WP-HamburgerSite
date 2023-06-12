@@ -70,8 +70,10 @@
             </section> -->
         </article>
         <ul class="p-pagenation">
-            <li class="c-page c-page--text">page 1/10</li>
-            <li><a href="" class="c-page c-page--first">≪</a></li>
+        <?php //if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+        <?php wp_pagenavi(); ?>
+            <!-- <li class="c-page c-page--text">page 1/10</li>
+            <li><a href="" class="c-page c-page--first">&laquo;</a></li>
             <li><a href="" class="c-page c-page--previous">前へ</a></li>
             <li><a href="" class="c-page c-page--number">1</a></li>
             <li><a href="" class="c-page c-page--number">2</a></li>
@@ -83,7 +85,7 @@
             <li><a href="" class="c-page c-page--number">8</a></li>
             <li><a href="" class="c-page c-page--number">9</a></li>
             <li><a href="" class="c-page c-page--next">次へ</a></li>
-            <li><a href="" class="c-page c-page--last">≫</a></li>
+            <li><a href="" class="c-page c-page--last">&raquo;</a></li> -->
         </ul>
     </main>
     <?php get_sidebar(); ?>

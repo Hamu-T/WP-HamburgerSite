@@ -1197,6 +1197,129 @@ h2.wp-block-heading {
   }
 }
 
+.wp-pagenavi {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24vw;
+  height: 2.2vw;
+  font-size: 1.3vw;
+  margin: 0 0.5vw;
+  color: #707070;
+}
+@media screen and (max-width: 1200px) {
+  .wp-pagenavi {
+    width: 32vw;
+    height: 4vw;
+    font-size: 2vw;
+    margin: 0 1vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wp-pagenavi {
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 400;
+    font-size: 3.5vw;
+    height: 8vw;
+    width: 72vw;
+    margin-left: 7vw;
+  }
+}
+
+.pages {
+  display: flex;
+  width: 5vw;
+  height: 2vw;
+  font-size: 1.3vw;
+  margin: 0.5vw;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .pages {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pages {
+    width: 16vw;
+    height: 6vw;
+    font-size: 5vw;
+  }
+}
+
+.previouspostslink, .nextpostslink {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2vw;
+  height: 2.2vw;
+  font-size: 1.3vw;
+  margin: 0 0.5vw;
+  color: #707070;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .previouspostslink, .nextpostslink {
+    width: 4vw;
+    height: 4vw;
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .previouspostslink, .nextpostslink {
+    align-items: self-end;
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 400;
+    font-size: 8vw;
+    height: 6vw;
+    width: 12vw;
+  }
+}
+
+span.current {
+  background-color: #3C2B1C;
+  color: #FFF;
+}
+
+.current, .page {
+  display: flex;
+  border: 1px solid #000;
+  width: 2vw;
+  height: 2vw;
+  margin: 0.5vw;
+  color: #707070;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .current, .page {
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .current, .page {
+    visibility: hidden;
+    width: 4vw;
+    height: 4vw;
+    font-size: 2.5vw;
+  }
+}
+.current:hover, .page:hover {
+  background-color: #3C2B1C;
+  color: #FFF;
+}
+.current.onColor, .page.onColor {
+  background-color: #3C2B1C;
+  color: #707070;
+}
+
 .p-card--list {
   display: flex;
   justify-content: flex-end;
@@ -1446,10 +1569,13 @@ h2.wp-block-heading {
 .p-pagenation {
   display: flex;
   justify-content: center;
-  margin-bottom: 4vw;
+  height: 5vw;
+  margin-bottom: 3vw;
 }
 @media screen and (max-width: 768px) {
   .p-pagenation {
+    justify-content: start;
+    height: 8vw;
     margin-bottom: 7.5vw;
   }
 }
