@@ -48,3 +48,14 @@ function hamburger_widgets_init() {
     ));
 }
 add_action( 'widgets_init', 'hamburger_widgets_init');
+
+//-----------------------------------------------------
+// 【全てのアーカイブ並び順を変更】
+//-----------------------------------------------------
+function orderby_modified_posts( $query ) {
+    if($query->is_main_query()) {
+    $query->set( 'orderby', 'date' );//date:日付で並び替え
+    $query->set( 'order', 'ASC' );//ASC：昇順　DESC：降順
+    }
+    }
+    add_action( 'pre_get_posts', 'orderby_modified_posts' );
