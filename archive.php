@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <main class="l-main">
         <div class="l-main__inner">
-            <article class="p-visual p-visual--archive" id="post-<?php the_ID();?>"<?php post_class(); ?>>
+            <article class="p-visual p-visual--archive">
                 <h2 class="c-title c-title--archive">Menu:</h2>
                 <h3 class="c-text c-text--archive"><?php single_term_title(); ?></h3>
             </article>

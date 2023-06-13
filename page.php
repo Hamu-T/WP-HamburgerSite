@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <main class="l-main">
         <div class="l-main__inner">
-            <article class="p-visual p-visual--shop" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <article class="p-visual p-visual--shop">
                 <h2 class="c-title c-title--single">ショップについて</h2>
             </article>
         </div><!-- l-main__inner -->
