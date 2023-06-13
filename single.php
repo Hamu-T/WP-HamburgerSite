@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <main class="l-main">
-        <article class="p-visual p-visual--single" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <article class="p-visual p-visual--single">
             <h2 class="c-title c-title--single"><?php the_title(); ?></h2>
         </article>
             

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <main class="l-main">
         <div class="l-main__inner">
-            <article class="p-visual p-visual--archive" id="post-<?php the_ID(); ?>"<?php post_class(); ?>>
+            <article class="p-visual p-visual--archive">
                 <h2 class="c-title c-title--archive">Search:</h2>
                 <h3 class="c-text c-text--archive"><?php single_term_title(); ?></h3>
             </article>
@@ -21,7 +21,7 @@
                 ?>
                 <section class="p-card--list">
                     <?php if ( has_post_thumbnail() ) : ?>
-                        <img class="p-card--img" src="./images/menu-thumbnail.jpg" alt="チーズバーガー画像">
+                        <img class="p-card--img" src="<?php the_post_thumbnail(); ?>" alt="メニュー画像">
                     <?php endif; ?>
                         <div class="p-card--contents">
                         <h3 class="c-title c-title--card-ttl result">見出しが入ります</h3>
@@ -97,20 +97,7 @@
             </section> -->
         </article>
         <ul class="p-pagenation">
-            <li class="c-page c-page--text">page 1/10</li>
-            <li><a class="c-page c-page--first">≪</a></li>
-            <li><a class="c-page c-page--previous">前へ</a></li>
-            <li><a class="c-page c-page--number">1</a></li>
-            <li><a class="c-page c-page--number">2</a></li>
-            <li><a class="c-page c-page--number">3</a></li>
-            <li><a class="c-page c-page--number">4</a></li>
-            <li><a class="c-page c-page--number">5</a></li>
-            <li><a class="c-page c-page--number">6</a></li>
-            <li><a class="c-page c-page--number">7</a></li>
-            <li><a class="c-page c-page--number">8</a></li>
-            <li><a class="c-page c-page--number">9</a></li>
-            <li><a class="c-page c-page--next">次へ</a></li>
-            <li><a class="c-page c-page--last">≫</a></li>
+            <?php wp_pagenavi(); ?>
         </ul>
     </main>
     <?php get_sidebar(); ?>
