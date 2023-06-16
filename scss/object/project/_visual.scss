@@ -24,7 +24,7 @@
     }
     /* archive-page */
     &--archive {
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../../../images/page-title_arcive@2x.jpg);
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/page-title_arcive@2x.jpg);
         height: 12vw;
         padding-left: 88px;
         @include m.mq(md) {

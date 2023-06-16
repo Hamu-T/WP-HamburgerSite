@@ -4,9 +4,9 @@
             <h2 class="c-title c-title--single"><?php the_title(); ?></h2>
         </article>
             
-        <div class="p-singles">
-            <div class="p-titles">
-                <?php the_content(); ?> 
+        <div class="p-titles">
+            <?php the_content(); ?> 
+        </div><!-- p-singles -->
     </main>
     <?php get_sidebar(); ?>
 <?php get_footer(); ?>

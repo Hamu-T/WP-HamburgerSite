@@ -7,8 +7,6 @@ function hamburger_theme_setup() {
     add_image_size( 'page_eyecatch', 550, 305, true );
     add_image_size( 'single_eyecatch', 1200, 900, true);
     register_nav_menus( array(
-        'main-menu'     => 'メインメニュー',
-        'footer_menu'   => 'フッターメニュー',
         'side_menu'     => 'サイドメニュー'
     ) );
 }

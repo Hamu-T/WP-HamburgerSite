@@ -26,3 +26,13 @@ single.php
 
 archive.php
 - テンプレート化
+  紐付け
+
+single.php
+- テンプレート化
+  紐付け
+  ページネーション
+
+page.php
+- テンプレート化
+  紐付け
