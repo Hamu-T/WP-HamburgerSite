@@ -768,6 +768,9 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   }
 }
 .c-text--footer {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
   font-weight: lighter;
   font-size: 1.1vw;
   color: #FFF;
@@ -1204,7 +1207,7 @@ h2.wp-block-heading {
   align-items: center;
   justify-content: center;
   width: 24vw;
-  height: 2.2vw;
+  height: 2.4vw;
   font-size: 1.3vw;
   margin: 0 0.5vw;
   color: #707070;
@@ -1228,29 +1231,30 @@ h2.wp-block-heading {
   }
 }
 
-.pages {
+span.pages {
   display: flex;
-  width: 5vw;
+  width: 8vw;
   height: 2vw;
   font-size: 1.3vw;
   margin: 0.5vw;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  border: none;
 }
 @media screen and (max-width: 1200px) {
-  .pages {
+  span.pages {
     font-size: 2vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .pages {
+  span.pages {
     width: 16vw;
     height: 6vw;
     font-size: 5vw;
   }
 }
 
-.previouspostslink, .nextpostslink {
+a.previouspostslink, a.nextpostslink {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   display: flex;
@@ -1262,21 +1266,22 @@ h2.wp-block-heading {
   margin: 0 0.5vw;
   color: #707070;
   cursor: pointer;
+  border: none;
 }
 @media screen and (max-width: 1200px) {
-  .previouspostslink, .nextpostslink {
+  a.previouspostslink, a.nextpostslink {
     width: 4vw;
     height: 4vw;
     font-size: 2vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .previouspostslink, .nextpostslink {
+  a.previouspostslink, a.nextpostslink {
     align-items: self-end;
     font-family: "M PLUS 1", sans-serif;
     font-weight: 400;
     font-size: 8vw;
-    height: 6vw;
+    height: 8vw;
     width: 12vw;
   }
 }
@@ -1286,38 +1291,85 @@ span.current {
   color: #FFF;
 }
 
-.current, .page {
+.current, .smaller, .larger {
   display: flex;
   border: 1px solid #000;
-  width: 2vw;
-  height: 2vw;
+  width: 2.2vw;
+  height: 2.2vw;
   margin: 0.5vw;
   color: #707070;
   align-items: center;
   justify-content: center;
 }
 @media screen and (max-width: 1200px) {
-  .current, .page {
+  .current, .smaller, .larger {
     width: 3vw;
     height: 3vw;
     font-size: 2vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .current, .page {
+  .current, .smaller, .larger {
     visibility: hidden;
     width: 4vw;
     height: 4vw;
     font-size: 2.5vw;
   }
 }
-.current:hover, .page:hover {
+.current:hover, .smaller:hover, .larger:hover {
   background-color: #3C2B1C;
   color: #FFF;
 }
-.current.onColor, .page.onColor {
+.current.onColor, .smaller.onColor, .larger.onColor {
   background-color: #3C2B1C;
   color: #707070;
+}
+
+.first, .extend, .last {
+  display: none;
+}
+
+#menu-item-670, #menu-item-690 {
+  font-family: "Roboto", sans-serif;
+  color: #EAEAEA;
+  font-weight: bold;
+  font-size: 4vw;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 1200px) {
+  #menu-item-670, #menu-item-690 {
+    font-size: 4.5vw;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #menu-item-670, #menu-item-690 {
+    font-size: 11vw;
+  }
+}
+
+.menu-item-691, .menu-item-695 {
+  color: #FFF;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 1.6vw;
+  margin-top: 1.7vw;
+  margin-right: 1.1vw;
+}
+@media screen and (max-width: 1200px) {
+  .menu-item-691, .menu-item-695 {
+    font-size: 2.5vw;
+    line-height: 5vw;
+    margin-right: 4vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-item-691, .menu-item-695 {
+    font-size: 3.5vw;
+    line-height: 8vw;
+    margin-right: 5vw;
+  }
 }
 
 .p-card--list {
@@ -1709,7 +1761,7 @@ span.current {
   }
 }
 .p-visual--archive {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../images/page-title_arcive@2x.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/page-title_arcive@2x.jpg);
   height: 12vw;
   padding-left: 88px;
 }

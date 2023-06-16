@@ -37,6 +37,9 @@
         }
     }
     &--footer {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
         font-weight:lighter;
         font-size: 1.1vw;
         color: v.$c-white;
