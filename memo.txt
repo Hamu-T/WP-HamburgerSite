@@ -36,3 +36,11 @@ single.php
 page.php
 - テンプレート化
   紐付け
+
+search.php
+- テンプレート化
+  紐付け
+
+404.php
+- テンプレート化
+  紐付け

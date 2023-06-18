@@ -133,6 +133,7 @@ h2.wp-block-heading {
         margin: 0 1vw;
     }
     @include m.mq(sp) {
+        justify-content: space-between;
         font-family: 'M PLUS 1', sans-serif;
         font-weight: 400;
         font-size: 3.5vw;
@@ -154,6 +155,7 @@ span.pages {
         font-size: 2vw;
     }
     @include m.mq(sp) {
+        display: none;
         width: 16vw;
         height: 6vw;
         font-size: 5vw;
@@ -257,4 +259,7 @@ span.current {
         line-height: 8vw;
         margin-right: 5vw;
     }
+}
+.menu-item-554 {
+    padding-bottom: 5vw;
 }
