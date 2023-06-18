@@ -661,13 +661,8 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   display: flex;
   gap: 2vw;
 }
-.c-single__img--contents:nth-child(odd) {
+.c-single__img--contents:nth-child(even) {
   flex-direction: row-reverse;
-}
-@media screen and (max-width: 768px) {
-  .c-single__img--contents:nth-child(odd) {
-    flex-direction: row;
-  }
 }
 .c-single__img--foods {
   min-width: 30vw;
@@ -823,7 +818,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   }
 }
 .c-text--archive {
-  font-size: 24px;
+  font-size: 32px;
   margin-left: 32px;
   color: #FFF;
 }
@@ -1222,6 +1217,7 @@ h2.wp-block-heading {
 }
 @media screen and (max-width: 768px) {
   .wp-pagenavi {
+    justify-content: space-between;
     font-family: "M PLUS 1", sans-serif;
     font-weight: 400;
     font-size: 3.5vw;
@@ -1248,6 +1244,7 @@ span.pages {
 }
 @media screen and (max-width: 768px) {
   span.pages {
+    display: none;
     width: 16vw;
     height: 6vw;
     font-size: 5vw;
@@ -1370,6 +1367,10 @@ span.current {
     line-height: 8vw;
     margin-right: 5vw;
   }
+}
+
+.menu-item-554 {
+  padding-bottom: 5vw;
 }
 
 .p-card--list {
@@ -1626,7 +1627,6 @@ span.current {
 }
 @media screen and (max-width: 768px) {
   .p-pagenation {
-    justify-content: start;
     height: 8vw;
     margin-bottom: 7.5vw;
   }
@@ -1811,6 +1811,31 @@ span.current {
 @media screen and (max-width: 768px) {
   .u-gap {
     gap: 4vw;
+  }
+}
+
+.u-width {
+  width: 100vw;
+}
+
+@media screen and (min-width: 1201px) {
+  .u-height {
+    height: 70vw;
+  }
+}
+
+.u-title {
+  height: 4vw;
+}
+@media screen and (max-width: 1200px) {
+  .u-title {
+    height: 10vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .u-title {
+    height: 12vw;
+    margin: auto;
   }
 }
 

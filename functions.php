@@ -4,23 +4,12 @@ function hamburger_theme_setup() {
     add_theme_support( 'menus' );
     add_theme_support( 'title-tag' );
     add_theme_support('post-thumbnails');
-    add_image_size( 'page_eyecatch', 550, 305, true );
-    add_image_size( 'single_eyecatch', 1200, 900, true);
+    add_theme_support( 'html5', array( 'search-form' ) );
     register_nav_menus( array(
         'side_menu'     => 'サイドメニュー'
     ) );
 }
 add_action( 'after_setup_theme', 'hamburger_theme_setup' );
-// //タイトル出力
-// function hamburger_title($title) {
-//     if( is_front_page() && is_home() ) {
-//         $title = get_bloginfo( 'name', 'display' );
-//     } elseif (is_singular() ) {
-//         $title = single_post_title( '', false );
-//     }
-//     return $title;
-// }
-// add_filter( 'pre_get_document_title', 'hamburger_title' );
 
 function hamburger_scripts() {
     wp_enqueue_style( 'noto-sans-jp', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap', array() );
@@ -46,14 +35,3 @@ function hamburger_widgets_init() {
     ));
 }
 add_action( 'widgets_init', 'hamburger_widgets_init');
-
-//-----------------------------------------------------
-// 【全てのアーカイブ並び順を変更】
-//-----------------------------------------------------
-// function orderby_modified_posts( $query ) {
-//     if($query->is_main_query()) {
-//     $query->set( 'orderby', 'date' );//date:日付で並び替え
-//     $query->set( 'order', 'ASC' );//ASC：昇順　DESC：降順
-//     }
-//     }
-//     add_action( 'pre_get_posts', 'orderby_modified_posts' );

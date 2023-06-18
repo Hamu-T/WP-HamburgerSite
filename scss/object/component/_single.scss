@@ -91,11 +91,8 @@
     &--contents {
         display: flex;
         gap: 2vw;
-        &:nth-child(odd) {
+        &:nth-child(even) {
             flex-direction: row-reverse;
-            @include m.mq(sp) {
-                flex-direction: row;
-            }
         }
     }
     &--foods {

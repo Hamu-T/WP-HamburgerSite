@@ -4,7 +4,7 @@
             <h2 class="c-title c-title--single"><?php the_title(); ?></h2>
         </article>
             
-        <div class="p-titles">
+        <div class="p-singles">
             <?php the_content(); ?> 
         </div><!-- p-singles -->
     </main>

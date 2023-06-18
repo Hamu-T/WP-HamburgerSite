@@ -11,7 +11,6 @@
         </h3>
         <p class="c-text c-text--copyright">Copyright: RaiseTech</p>
     </footer>
-    <!-- <script src="./JS/style.js"></script> -->
     </div>
     <?php wp_footer(); ?>
 </body>

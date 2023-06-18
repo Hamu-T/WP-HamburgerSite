@@ -1,0 +1,21 @@
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
+
+.u-width {
+    width: 100vw;
+}
+.u-height {
+    @include m.mq(pc) {
+        height: 70vw;
+    }
+}
+.u-title {
+    height: 4vw;
+    @include m.mq(md) {
+        height: 10vw;
+    }
+    @include m.mq(sp) {
+        height: 12vw;
+        margin: auto;
+    }
+}
