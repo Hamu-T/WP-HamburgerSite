@@ -66,6 +66,24 @@ h2.wp-block-heading {
     color: v.$c-text;
     font-weight: bold;
 }
+#menu-item {
+    font-family: 'Roboto', sans-serif;
+    color: v.$c-text;
+    font-weight: bold;
+    &-158, &-159 {
+        font-size: 4vw;
+        padding: 0;
+        margin: 0;
+        color: v.$c-outin;
+        @include m.mq(md) {
+            font-size: 4.5vw;
+            padding-top: 0;
+        }
+        @include m.mq(sp) {
+            font-size: 11vw;
+        }
+    }
+}
 .menu-item-type-taxonomy:first-child {
     @include m.mq(md) {
         padding-top: 10vh;
@@ -262,4 +280,21 @@ span.current {
 }
 .menu-item-554 {
     padding-bottom: 5vw;
+}
+.menu-item-160 {
+    padding-right: 1.4vw;
+    @include m.mq(md) {
+        margin-right: 2.8vw;
+    }    
+    @include m.mq(sp) {
+        margin-right: 3.3vw;
+    }
+
+}
+.menu-item-160,
+.menu-item-162 {
+    color: v.$c-white;;
+}
+.menu-item-149 {
+    padding-bottom: 16vw;
 }

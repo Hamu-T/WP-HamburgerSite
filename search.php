@@ -6,7 +6,7 @@
                 <h3 class="c-text c-text--archive"></h3>
             </article>
         </div><!-- l-main__inner -->
-        <article class="p-contents">
+        <article class="p-contents" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <section class="p-info">
                 <h2 class="c-title c-title--info">小見出しが入ります</h2>
                 <p class="c-text c-text--info">
