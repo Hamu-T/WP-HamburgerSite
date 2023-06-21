@@ -35,3 +35,6 @@ function hamburger_widgets_init() {
     ));
 }
 add_action( 'widgets_init', 'hamburger_widgets_init');
+
+// adminbarを非表示にする
+// add_filter( 'show_admin_bar', '__return_false' );

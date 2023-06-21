@@ -6,17 +6,11 @@
                 <h3 class="c-text c-text--archive"><?php single_term_title(); ?></h3>
             </article>
         </div><!-- l-main__inner -->
-        <article class="p-contents">
-            <section class="p-info">
-                <h2 class="c-title c-title--info">小見出しが入ります</h2>
-                <p class="c-text c-text--info">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                </p>
+        <article class="p-contents" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <section class="p-info">
+        <?php if (is_category()) : ?>
+        <?php echo category_description(); ?>
+      <?php endif; ?>
             </section>
             <?php if ( have_posts() ) : ?>
                 <?php while (have_posts() ) :
@@ -42,7 +36,7 @@
             <?php endif; ?>
         </article>
         <ul class="p-pagenation">
-        <?php wp_pagenavi(); ?>
+            <?php wp_pagenavi(); ?>
         </ul>
     </main>
     <?php get_sidebar(); ?>

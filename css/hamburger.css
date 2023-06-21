@@ -1139,6 +1139,29 @@ h2.wp-block-heading {
   font-weight: bold;
 }
 
+#menu-item {
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  font-weight: bold;
+}
+#menu-item-158, #menu-item-159 {
+  font-size: 4vw;
+  padding: 0;
+  margin: 0;
+  color: #EAEAEA;
+}
+@media screen and (max-width: 1200px) {
+  #menu-item-158, #menu-item-159 {
+    font-size: 4.5vw;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  #menu-item-158, #menu-item-159 {
+    font-size: 11vw;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .menu-item-type-taxonomy:first-child {
     padding-top: 10vh;
@@ -1373,6 +1396,29 @@ span.current {
   padding-bottom: 5vw;
 }
 
+.menu-item-160 {
+  padding-right: 1.4vw;
+}
+@media screen and (max-width: 1200px) {
+  .menu-item-160 {
+    margin-right: 2.8vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-item-160 {
+    margin-right: 3.3vw;
+  }
+}
+
+.menu-item-160,
+.menu-item-162 {
+  color: #FFF;
+}
+
+.menu-item-149 {
+  padding-bottom: 16vw;
+}
+
 .p-card--list {
   display: flex;
   justify-content: flex-end;
@@ -1387,13 +1433,19 @@ span.current {
 }
 .p-card--img {
   width: 62%;
-  height: auto;
+  height: 29vw;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 1200px) {
+  .p-card--img {
+    height: 39vw;
+  }
 }
 @media screen and (max-width: 768px) {
   .p-card--img {
     width: 100%;
+    height: 60vw;
   }
 }
 .p-card--contents {
