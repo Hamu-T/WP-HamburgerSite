@@ -6,7 +6,11 @@ function hamburger_theme_setup() {
     add_theme_support('post-thumbnails');
     add_theme_support( 'html5', array( 'search-form' ) );
     register_nav_menus( array(
-        'side_menu'     => 'サイドメニュー'
+        'side_menu'     => 'サイドメニュー',
+        'history_menu'   => 'ヒストリー',
+        'shop_menu'     => 'ショップ',
+        'takeout_menu'  => 'テイクアウト',
+        'eatin_menu'    => 'イートイン'
     ) );
 }
 add_action( 'after_setup_theme', 'hamburger_theme_setup' );
@@ -37,4 +41,4 @@ function hamburger_widgets_init() {
 add_action( 'widgets_init', 'hamburger_widgets_init');
 
 // adminbarを非表示にする
-// add_filter( 'show_admin_bar', '__return_false' );
+add_filter( 'show_admin_bar', '__return_false' );
