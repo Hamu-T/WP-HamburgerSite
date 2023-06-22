@@ -346,6 +346,7 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
 .c-layout {
   position: relative;
   display: grid;
+  grid-auto-rows: auto 1fr auto;
 }
 .c-layout .l-header {
   grid-column: 1/2;

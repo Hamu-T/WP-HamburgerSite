@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <main class="l-main">
         <div class="l-main__inner">
-            <article class="p-visual p-visual--front">
+            <article class="p-visual p-visual--front u-width">
                 <h2 class="c-title c-title--front">ダミーサイト</h2>
             </article>
         </div><!-- l-main__inner -->
@@ -11,7 +11,7 @@
                     <li class="p-outin__title c-outin__title">
                         <div  class="c-title c-title--outin_title">
                             <?php wp_nav_menu(array(
-                                'menu' => 'takeout',
+                                'theme_location' => 'takeout_menu',
                                 ));
                             ?>
                         </div>
@@ -39,7 +39,7 @@
                     <li class="p-outin__title c-outin__title">
                     <div  class="c-title c-title--outin_title">
                             <?php wp_nav_menu(array(
-                                'menu' => 'eatin',
+                                'theme_location' => 'eatin_menu',
                                 ));
                             ?>
                         </div>
