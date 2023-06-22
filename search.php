@@ -7,10 +7,11 @@
             </article>
         </div><!-- l-main__inner -->
         <article class="p-contents" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <?php //the_excerpt(); ?><!-- 抜粋 -->
         <?php if ( have_posts() ) : ?>
             <?php $is_first_post = true; ?>
-            <?php while ( have_posts() ) : the_post(); ?>
+            <?php while ( have_posts() ) :
+                the_post();
+            ?>
                 <?php if ( $is_first_post ) : ?>
                     <section class="p-info">
                         <h2 class="c-title c-title--info">検索結果</h2>

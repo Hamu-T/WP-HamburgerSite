@@ -7,21 +7,11 @@
             </article>
         </div><!-- l-main__inner -->
         <article class="p-contents" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <?php //the_excerpt(); ?><!-- 抜粋 -->
+        <?php the_excerpt(); ?><!-- 抜粋 -->
         <?php if ( have_posts() ) : ?>
-            <?php $is_first_post = true; ?>
-            <?php while ( have_posts() ) : the_post(); ?>
-                <?php if ( $is_first_post ) : ?>
-                    <section class="p-info">
-                        <h2 class="c-title c-title--info">小見出しが入ります</h2>
-                        <p class="c-text c-text--info">
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        </p>
-                    </section>
-                    <?php $is_first_post = false; ?>
-                <?php endif; ?>
+            <?php while ( have_posts() ) :
+                the_post();
+            ?>
                 <section class="p-card--list">
                     <?php if ( has_post_thumbnail() ) : ?>
                         <img class="p-card--img" src="<?php the_post_thumbnail(); ?>">
