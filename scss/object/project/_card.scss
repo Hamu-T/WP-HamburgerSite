@@ -26,10 +26,14 @@
     }
     &--contents {
         width: 50%;
-        margin: 4vw 3vw;
+        margin: 4vw 3vw 1vw 3vw;
         @include m.mq(sp) {
             width: auto;
             margin: 8vw 5vw 0 5vw;
+        }
+        p {
+            font-family: 'Roboto', sans-serif;
+            color: v.$c-white;
         }
     }
     &--button {
