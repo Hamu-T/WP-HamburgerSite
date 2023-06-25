@@ -1225,7 +1225,7 @@ h2.wp-block-heading {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24vw;
+  width: 28vw;
   height: 3vw;
   font-size: 1.3vw;
   margin: 0 0.5vw;
@@ -1233,7 +1233,7 @@ h2.wp-block-heading {
 }
 @media screen and (max-width: 1200px) {
   .wp-pagenavi {
-    width: 32vw;
+    width: 36vw;
     height: 4vw;
     font-size: 2vw;
     margin: 0 1vw;
@@ -1286,6 +1286,7 @@ a.previouspostslink, a.nextpostslink {
   font-size: 1.3vw;
   margin: 0 0.5vw;
   color: #707070;
+  overflow: hidden;
   cursor: pointer;
   border: none;
 }
@@ -1400,19 +1401,16 @@ span.current {
 .menu-item-160,
 .menu-item-209 {
   color: #FFF;
-  margin: 0 1.4vw;
+  margin: 0;
 }
-@media screen and (max-width: 1200px) {
-  .menu-item-160,
-.menu-item-209 {
-    margin: 0 2.8vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu-item-160,
-.menu-item-209 {
-    margin: 0 3.3vw;
-  }
+
+.menu-item-160 a::after {
+  content: "";
+  display: inline-block;
+  height: 25px;
+  width: 2px;
+  background-color: #fff;
+  margin: -4px 15px;
 }
 
 .menu-item-149 {
