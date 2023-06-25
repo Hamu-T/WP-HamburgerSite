@@ -4,7 +4,6 @@
             name="s" id="s" value="<?php the_search_query(); ?>">
         <div class="p-search__grass c-grass c-grass--header"></div>
     </div>
-    <button type="submit" class="p-search__button c-button c-button--header" id="searchsubmit"
-        onclick="showInputValue()">検索
+    <button type="submit" class="p-search__button c-button c-button--header" id="searchsubmit">検索
     </button>
 </form><!-- .p-search -->

@@ -40,5 +40,24 @@ function hamburger_widgets_init() {
 }
 add_action( 'widgets_init', 'hamburger_widgets_init');
 
+function get_first_paragraph() {
+    global $post;
+    $content = apply_filters('the_content', $post->post_content);
+    $content = str_replace(']]>', ']]&gt;', $content);
+    $paragraphs = explode('</p>', $content);
+    $first_paragraph = strip_tags($paragraphs[1]);
+    return '<p>' . $first_paragraph . '</p>';
+}
+
+
 // adminbarを非表示にする
 add_filter( 'show_admin_bar', '__return_false' );
+
+// 固定ページを除外し、投稿のみを検索の対象にする
+function SearchFilter( $query ) {
+	if ( $query -> is_search ) {
+		$query -> set( 'post_type', 'post' );
+	}
+	return $query;
+}
+add_filter( 'pre_get_posts', 'SearchFilter' );
