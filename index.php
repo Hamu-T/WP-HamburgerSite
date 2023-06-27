@@ -11,7 +11,8 @@
                     <li class="p-outin__title c-outin__title">
                         <div  class="c-title c-title--outin_title">
                             <?php wp_nav_menu(array(
-                                'theme_location' => 'takeout_menu',
+                                'theme_location'    =>  'takeout_menu',
+                                'menu_class'        =>  'outin_menu'
                                 ));
                             ?>
                         </div>
@@ -37,12 +38,13 @@
             <section class="p-outin__box c-outin c-outin--eatin">
                 <ul class="p-outin__inner c-outin__container">
                     <li class="p-outin__title c-outin__title">
-                    <div  class="c-title c-title--outin_title">
+                    <!-- <div  class="c-title c-title--outin_title"> -->
                             <?php wp_nav_menu(array(
-                                'theme_location' => 'eatin_menu',
+                                'theme_location'    =>  'eatin_menu',
+                                'menu_class'        =>  'outin_menu'
                                 ));
                             ?>
-                        </div>
+                        <!-- </div> -->
                         <div class="c-border c-border--outin"></div>
                     </li>
                     <div class="p-outin__content c-outin__block">
