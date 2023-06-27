@@ -1405,6 +1405,7 @@ span.current {
 .outin_menu li {
   margin-top: 0;
 }
+
 .outin_menu li a {
   font-size: 4vw;
   padding-top: 0;
@@ -1432,7 +1433,8 @@ span.current {
   color: #FFF;
   margin: 0;
 }
-.footer--shop li a:first-child:after {
+
+.footer--shop li a:first-child::after {
   content: "";
   display: inline-block;
   height: 25px;
