@@ -1,5 +1,5 @@
-@use '../../../foundation/variable' as v;
-@use '../../../foundation/mixin' as m;
+@use '../../foundation/variable' as v;
+@use '../../foundation/mixin' as m;
 h2.wp-block-heading {
     font-family: 'M PLUS 1', sans-serif;
     font-weight: bold;
@@ -286,7 +286,8 @@ span.current {
 }
 .outin_menu li {
     margin-top: 0;
-    a {
+}
+.outin_menu li a {
         font-size: 4vw;
         padding-top: 0;
         color: v.$c-outin;
@@ -298,7 +299,6 @@ span.current {
             font-size: 11vw;
         }
     }
-}
 .p-footer {
     display: flex;
     justify-content: center;
@@ -307,14 +307,14 @@ span.current {
 .footer--shop li {
     color: v.$c-white;
     margin: 0;
-    a:first-child:after {
-        content: "";
-        display: inline-block;
-        height: 25px;
-        width: 2px;
-        background-color: #fff;
-        margin: -4px 15px;
-    }
+}
+.footer--shop li a:first-child::after {
+    content: "";
+    display: inline-block;
+    height: 25px;
+    width: 2px;
+    background-color: #fff;
+    margin: -4px 15px;
 }
 .footer--history li {
     color: v.$c-white;
