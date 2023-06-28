@@ -1,65 +1,13 @@
 @use '../../foundation/variable' as v;
 @use '../../foundation/mixin' as m;
-h2.wp-block-heading {
-    font-family: 'M PLUS 1', sans-serif;
-    font-weight: bold;
-    font-size: 3.5vw;
-    color: v.$c-darkGoldenBrown;
-        font-size: 2vw;
-        @include m.mq(md) {
-            font-size: 3.5vw;
-        }
-        @include m.mq(sp) {
-            font-size: 6.5vw;
-        }
-}
-.has-large-font-size {
-    font-size: 5vw;
-}
-.has-text-color {
-    color: red;
-}
-.font-width {
-    font-weight: 400;
-    color: red;
-}
-.wp-block-image.c-single__img--top {
-    img {
-        width: 100%;
-        height: 32vw;
-    }
-}
-.wp-container-2.wp-container-2,
-.wp-container-3.wp-container-3,
-.wp-container-4.wp-container-4,
-.wp-container-5.wp-container-5 {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.wp-block-group__inner-container.block-editor-block-list__layout {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1vw;
-    @include m.mq(md) {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2vw;
-    }
-    @include m.mq(sp) {
-        grid-template-columns: auto;
-        gap: 6vw;
-    }
-}
-.menu-item {
+
+/* TakeOut,EatIn タイトル設定
+*****************************************/
+.outin_menu {//TakeOut,EatInタイトル設定
     font-family: 'Roboto', sans-serif;
     color: v.$c-text;
     font-weight: bold;
-}
-#menu-item {
-    font-family: 'Roboto', sans-serif;
-    color: v.$c-text;
-    font-weight: bold;
-    &-158, &-159 {
+    li {
         font-size: 4vw;
         padding: 0;
         margin: 0;
@@ -73,18 +21,23 @@ h2.wp-block-heading {
         }
     }
 }
-.menu-item-type-taxonomy:first-child {
+
+/* サイドメニュー設定
+*************************************/
+.sidebar-menu {// サイドメニューフォント設定
+    font-family: 'Roboto', sans-serif;
+    color: v.$c-text;
+    font-weight: bold;
+}
+.sidebar-menu > li:first-child {//「バーガー」のトップに余白をつける
     @include m.mq(md) {
         padding-top: 10vh;
     }
 }
-.sub-menu {
-    font-family: 'Roboto', sans-serif;
-    color: v.$c-text;
-    font-weight: bold;
-    width: auto;
+.sidebar-menu {//メニュー下に余白を入れてメニューが隠れないようにする
+    padding-bottom: 24vw;
 }
-.menu-item-type-taxonomy {
+.sidebar-menu > li {//「バーガー」「サイド」「ドリンク」の設定
     font-family: 'M PLUS 1', sans-serif;
     font-size: 1.3vw;
     margin-top: 2.7vw;
@@ -100,26 +53,35 @@ h2.wp-block-heading {
     }
 
 }
-.menu-item-type-post_type {
-    
-    color: v.$c-text;
-    font-weight: 400;
-    font-size: 1vw;
-    line-height: 1.6vw;
-    margin-top: 1.7vw;
-    margin-left: 1.1vw;
-    @include m.mq(md) {
-        font-size: 2.5vw;
-        line-height: 5vw;
-        margin-left: 4vw;
-    }
-    @include m.mq(sp) {
-        font-size: 3.5vw;
-        line-height: 8vw;
-        margin-left: 5vw;
-    }
 
+/* サブメニュー設定 */
+.sub-menu {//サブメニューフォント設定
+    font-family: 'Roboto', sans-serif;
+    color: v.$c-text;
+    font-weight: bold;
+    width: auto;
+    & > li {//サブメニューを右にずらす
+        color: v.$c-text;
+        font-weight: 400;
+        font-size: 1vw;
+        line-height: 1.6vw;
+        margin-top: 1.7vw;
+        margin-left: 1.1vw;
+        @include m.mq(md) {
+            font-size: 2.5vw;
+            line-height: 5vw;
+            margin-left: 4vw;
+        }
+        @include m.mq(sp) {
+            font-size: 3.5vw;
+            line-height: 8vw;
+            margin-left: 5vw;
+        }
+    }
 }
+
+/*  ページネーション設定
+***********************************/
 .wp-pagenavi {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -232,91 +194,24 @@ span.current {
 .first, .extend, .last {
     display: none;
 }
-#menu-item-670, #menu-item-690 {
-    font-family: "Roboto", sans-serif;
-    color: v.$c-outin;
-    font-weight: bold;
-    font-size: 4vw;
-    padding: 0;
-    margin: 0;
-    @include m.mq(md) {
-        font-size: 4.5vw;
-        padding-top: 0;
-    }
-    @include m.mq(sp) {
-        font-size: 11vw;
-    }
-}
-.menu-item-691, .menu-item-695 {
-    color: v.$c-white;
-    font-weight: 400;
-    font-size: 1vw;
-    line-height: 1.6vw;
-    margin-top: 1.7vw;
-    margin-right: 1.1vw;
-    @include m.mq(md) {
-        font-size: 2.5vw;
-        line-height: 5vw;
-        margin-right: 4vw;
-    }
-    @include m.mq(sp) {
-        font-size: 3.5vw;
-        line-height: 8vw;
-        margin-right: 5vw;
-    }
-}
-.menu-item-554 {
-    padding-bottom: 5vw;
-}
-// .menu-item-160,
-// .menu-item-209  {
-//     color: v.$c-white;
-//     margin: 0;
-// }
-// .menu-item-160 a::after {
-//     content: "";
-//     display: inline-block;
-//     height: 25px;
-//     width: 2px;
-//     background-color: #fff;
-//     margin: -4px 15px;
-// }
-.menu-item-149 {
-    padding-bottom: 16vw;
-}
-.outin_menu li {
-    margin-top: 0;
-}
-.outin_menu li a {
-        font-size: 4vw;
-        padding-top: 0;
-        color: v.$c-outin;
-        @include m.mq(md) {
-            font-size: 4.5vw;
-            padding-top: 0;
-        }
-        @include m.mq(sp) {
-            font-size: 11vw;
-        }
-    }
+
+
+/* 「ショップ情報」「ヒストリー」設定
+**************************************/
 .p-footer {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
 }
-.footer--shop li {
+.footer--shop > li,
+.footer--history > li {
     color: v.$c-white;
     margin: 0;
 }
-.footer--shop li a:first-child::after {
+.footer--shop > li > a::after {
     content: "";
     display: inline-block;
     height: 25px;
     width: 2px;
     background-color: #fff;
     margin: -4px 15px;
-}
-.footer--history li {
-    color: v.$c-white;
-    margin: 0;
 }
