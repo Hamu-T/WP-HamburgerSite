@@ -1071,132 +1071,77 @@ h1, h2, h3, h4, h5, h6, ul, li, dt, dl, dd, p {
   }
 }
 
-h2.wp-block-heading {
-  font-family: "M PLUS 1", sans-serif;
-  font-weight: bold;
-  font-size: 3.5vw;
-  color: #3C2A10;
-  font-size: 2vw;
-}
-@media screen and (max-width: 1200px) {
-  h2.wp-block-heading {
-    font-size: 3.5vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  h2.wp-block-heading {
-    font-size: 6.5vw;
-  }
-}
-
-.has-large-font-size {
-  font-size: 5vw;
-}
-
-.has-text-color {
-  color: red;
-}
-
-.font-width {
-  font-weight: 400;
-  color: red;
-}
-
-.wp-block-image.c-single__img--top img {
-  width: 100%;
-  height: 32vw;
-}
-
-.wp-container-2.wp-container-2,
-.wp-container-3.wp-container-3,
-.wp-container-4.wp-container-4,
-.wp-container-5.wp-container-5 {
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.wp-block-group__inner-container.block-editor-block-list__layout {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1vw;
-}
-@media screen and (max-width: 1200px) {
-  .wp-block-group__inner-container.block-editor-block-list__layout {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  .wp-block-group__inner-container.block-editor-block-list__layout {
-    grid-template-columns: auto;
-    gap: 6vw;
-  }
-}
-
-.menu-item {
+/* TakeOut,EatIn タイトル設定
+*****************************************/
+.outin_menu {
   font-family: "Roboto", sans-serif;
   color: #707070;
   font-weight: bold;
 }
-
-#menu-item {
-  font-family: "Roboto", sans-serif;
-  color: #707070;
-  font-weight: bold;
-}
-#menu-item-158, #menu-item-159 {
+.outin_menu li {
   font-size: 4vw;
   padding: 0;
   margin: 0;
   color: #EAEAEA;
 }
 @media screen and (max-width: 1200px) {
-  #menu-item-158, #menu-item-159 {
+  .outin_menu li {
     font-size: 4.5vw;
     padding-top: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  #menu-item-158, #menu-item-159 {
+  .outin_menu li {
     font-size: 11vw;
   }
 }
 
+/* サイドメニュー設定
+*************************************/
+.sidebar-menu {
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1200px) {
-  .menu-item-type-taxonomy:first-child {
+  .sidebar-menu > li:first-child {
     padding-top: 10vh;
   }
 }
 
-.sub-menu {
-  font-family: "Roboto", sans-serif;
-  color: #707070;
-  font-weight: bold;
-  width: auto;
+.sidebar-menu {
+  padding-bottom: 24vw;
 }
 
-.menu-item-type-taxonomy {
+.sidebar-menu > li {
   font-family: "M PLUS 1", sans-serif;
   font-size: 1.3vw;
   margin-top: 2.7vw;
 }
 @media screen and (max-width: 1200px) {
-  .menu-item-type-taxonomy {
+  .sidebar-menu > li {
     font-size: 3.7vw;
     margin-top: 9vw;
     margin-bottom: 4vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .menu-item-type-taxonomy {
+  .sidebar-menu > li {
     font-size: 5.5vw;
     margin-top: 14vw;
     margin-bottom: 7vw;
   }
 }
 
-.menu-item-type-post_type {
+/* サブメニュー設定 */
+.sub-menu {
+  font-family: "Roboto", sans-serif;
+  color: #707070;
+  font-weight: bold;
+  width: auto;
+}
+.sub-menu > li {
   color: #707070;
   font-weight: 400;
   font-size: 1vw;
@@ -1205,20 +1150,22 @@ h2.wp-block-heading {
   margin-left: 1.1vw;
 }
 @media screen and (max-width: 1200px) {
-  .menu-item-type-post_type {
+  .sub-menu > li {
     font-size: 2.5vw;
     line-height: 5vw;
     margin-left: 4vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .menu-item-type-post_type {
+  .sub-menu > li {
     font-size: 3.5vw;
     line-height: 8vw;
     margin-left: 5vw;
   }
 }
 
+/*  ページネーション設定
+***********************************/
 .wp-pagenavi {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -1351,101 +1298,26 @@ span.current {
   display: none;
 }
 
-#menu-item-670, #menu-item-690 {
-  font-family: "Roboto", sans-serif;
-  color: #EAEAEA;
-  font-weight: bold;
-  font-size: 4vw;
-  padding: 0;
-  margin: 0;
-}
-@media screen and (max-width: 1200px) {
-  #menu-item-670, #menu-item-690 {
-    font-size: 4.5vw;
-    padding-top: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  #menu-item-670, #menu-item-690 {
-    font-size: 11vw;
-  }
-}
-
-.menu-item-691, .menu-item-695 {
-  color: #FFF;
-  font-weight: 400;
-  font-size: 1vw;
-  line-height: 1.6vw;
-  margin-top: 1.7vw;
-  margin-right: 1.1vw;
-}
-@media screen and (max-width: 1200px) {
-  .menu-item-691, .menu-item-695 {
-    font-size: 2.5vw;
-    line-height: 5vw;
-    margin-right: 4vw;
-  }
-}
-@media screen and (max-width: 768px) {
-  .menu-item-691, .menu-item-695 {
-    font-size: 3.5vw;
-    line-height: 8vw;
-    margin-right: 5vw;
-  }
-}
-
-.menu-item-554 {
-  padding-bottom: 5vw;
-}
-
-.menu-item-149 {
-  padding-bottom: 16vw;
-}
-
-.outin_menu li {
-  margin-top: 0;
-}
-
-.outin_menu li a {
-  font-size: 4vw;
-  padding-top: 0;
-  color: #EAEAEA;
-}
-@media screen and (max-width: 1200px) {
-  .outin_menu li a {
-    font-size: 4.5vw;
-    padding-top: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .outin_menu li a {
-    font-size: 11vw;
-  }
-}
-
+/* 「ショップ情報」「ヒストリー」設定
+**************************************/
 .p-footer {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 
-.footer--shop li {
+.footer--shop > li,
+.footer--history > li {
   color: #FFF;
   margin: 0;
 }
 
-.footer--shop li a:first-child::after {
+.footer--shop > li > a::after {
   content: "";
   display: inline-block;
   height: 25px;
   width: 2px;
   background-color: #fff;
   margin: -4px 15px;
-}
-
-.footer--history li {
-  color: #FFF;
-  margin: 0;
 }
 
 .p-card--list {
