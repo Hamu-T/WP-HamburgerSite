@@ -36,6 +36,9 @@
 }
 .sidebar-menu {//メニュー下に余白を入れてメニューが隠れないようにする
     padding-bottom: 56vw;
+    @include m.mq(sp) {
+        padding-bottom: 96vw;
+    }
 }
 .sidebar-menu > li {//「バーガー」「サイド」「ドリンク」の設定
     font-family: 'M PLUS 1', sans-serif;
